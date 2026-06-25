@@ -10,12 +10,9 @@
   <meta property="og:description" content="Every shoot counts." />
   <meta property="og:type" content="website" />
   <title>Baba K | Sports Photography</title>
-
-  <!-- Google Fonts: Playfair Display + Raleway -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -33,13 +30,10 @@
       <a href="#contact">Contact</a>
     </nav>
     <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </button>
   </header>
 
-  <!-- Mobile Menu -->
   <div class="nav__mobile-menu" id="mobileMenu">
     <a href="#work">Work</a>
     <a href="#about">About</a>
@@ -52,7 +46,6 @@
     <!-- ========== HERO ========== -->
     <section class="hero" id="home">
       <div class="hero__bg">
-        <!-- baba3: dunk shot — most dramatic, perfect hero -->
         <img src="baba3.webp" alt="Basketball player dunking" />
         <div class="hero__overlay"></div>
       </div>
@@ -68,29 +61,26 @@
       </div>
     </section>
 
-    <!-- ========== WORK / PORTFOLIO ========== -->
+    <!-- ========== PORTFOLIO ========== -->
     <section class="work" id="work">
       <div class="container">
-        <div class="section-header reveal">
+
+        <div class="section-header">
           <p class="section-label">Portfolio</p>
           <h2 class="section-title">Selected Work</h2>
         </div>
 
-        <!-- Filter Tabs -->
-        <div class="work__filters reveal" role="tablist">
-          <button class="work__filter work__filter--active" role="tab" data-filter="all">All</button>
-          <button class="work__filter" role="tab" data-filter="basketball">Basketball</button>
-          <button class="work__filter" role="tab" data-filter="women">Women's</button>
-          <button class="work__filter" role="tab" data-filter="atmosphere">Atmosphere</button>
+        <!-- ---- MEN'S GRID ---- -->
+        <div class="grid-label">
+          <span>Men's Basketball</span>
         </div>
 
-        <!-- Photo Grid -->
-        <div class="work__grid">
+        <div class="work__grid work__grid--men">
 
-          <!-- baba1: AllStar #6 driving — wide hero slot -->
-          <article class="work__item" data-category="basketball">
+          <!-- baba1: AllStar #6 driving — wide -->
+          <article class="work__item">
             <div class="work__thumb">
-              <img src="baba1.webp" alt="AllStar #6 driving to the basket" loading="lazy" />
+              <img src="baba1.webp" alt="AllStar #6 driving to basket" loading="lazy" />
               <div class="work__item-overlay">
                 <p class="work__item-title">The Drive</p>
                 <p class="work__item-meta">Basketball · AllStar Game</p>
@@ -98,10 +88,10 @@
             </div>
           </article>
 
-          <!-- baba3: NIBS dunk — tall dramatic shot -->
-          <article class="work__item" data-category="basketball">
+          <!-- baba3: NIBS dunk — tall -->
+          <article class="work__item work__item--tall">
             <div class="work__thumb">
-              <img src="baba3.webp" alt="NIBS player throwing down a dunk" loading="lazy" />
+              <img src="baba3.webp" alt="NIBS player dunking" loading="lazy" />
               <div class="work__item-overlay">
                 <p class="work__item-title">Above the Rim</p>
                 <p class="work__item-meta">Basketball · NIBS</p>
@@ -109,21 +99,21 @@
             </div>
           </article>
 
-          <!-- baba9: Knight #32 emotional moment -->
-          <article class="work__item" data-category="basketball">
+          <!-- baba4: AllStar #19 scoreboard -->
+          <article class="work__item">
             <div class="work__thumb">
-              <img src="baba9.webp" alt="Knight #32 emotional moment on court" loading="lazy" />
+              <img src="baba4.webp" alt="AllStar #19 with scoreboard" loading="lazy" />
               <div class="work__item-overlay">
-                <p class="work__item-title">The Weight</p>
-                <p class="work__item-meta">Basketball · Knights</p>
+                <p class="work__item-title">Game Face</p>
+                <p class="work__item-meta">Basketball · AllStar Game</p>
               </div>
             </div>
           </article>
 
-          <!-- baba7: CIC player dribbling with foreground blur -->
-          <article class="work__item" data-category="basketball">
+          <!-- baba7: CIC dribble foreground blur -->
+          <article class="work__item">
             <div class="work__thumb">
-              <img src="baba7.webp" alt="CIC player dribbling ball" loading="lazy" />
+              <img src="baba7.webp" alt="CIC player dribbling" loading="lazy" />
               <div class="work__item-overlay">
                 <p class="work__item-title">Court Vision</p>
                 <p class="work__item-meta">Basketball · CIC</p>
@@ -131,19 +121,40 @@
             </div>
           </article>
 
-          <!-- baba5: Women's game — posting up -->
-          <article class="work__item" data-category="women">
+          <!-- baba9: Knight #32 emotional -->
+          <article class="work__item">
             <div class="work__thumb">
-              <img src="baba5.webp" alt="Women's basketball player posting up" loading="lazy" />
+              <img src="baba9.webp" alt="Knight #32 emotional moment" loading="lazy" />
               <div class="work__item-overlay">
-                <p class="work__item-title">Post Up</p>
-                <p class="work__item-meta">Women's Basketball</p>
+                <p class="work__item-title">The Weight</p>
+                <p class="work__item-meta">Basketball · Knights</p>
               </div>
             </div>
           </article>
 
-          <!-- baba6: NURU women's player dribbling — wide slot -->
-          <article class="work__item" data-category="women">
+          <!-- baba2: Fan vuvuzela atmosphere -->
+          <article class="work__item">
+            <div class="work__thumb">
+              <img src="baba2.webp" alt="Fan blowing vuvuzela" loading="lazy" />
+              <div class="work__item-overlay">
+                <p class="work__item-title">Make Some Noise</p>
+                <p class="work__item-meta">Atmosphere · Courtside</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <!-- /men's grid -->
+
+        <!-- ---- WOMEN'S GRID ---- -->
+        <div class="grid-label grid-label--women">
+          <span>Women's Basketball</span>
+        </div>
+
+        <div class="work__grid work__grid--women">
+
+          <!-- baba6: NURU dribbling — wide -->
+          <article class="work__item work__item--wide">
             <div class="work__thumb">
               <img src="baba6.webp" alt="NURU women's player dribbling" loading="lazy" />
               <div class="work__item-overlay">
@@ -153,87 +164,80 @@
             </div>
           </article>
 
-          <!-- baba8: NURU vs Olympia defensive battle -->
-          <article class="work__item" data-category="women">
+          <!-- baba5: posting up -->
+          <article class="work__item">
+            <div class="work__thumb">
+              <img src="baba5.webp" alt="Women's player posting up" loading="lazy" />
+              <div class="work__item-overlay">
+                <p class="work__item-title">Post Up</p>
+                <p class="work__item-meta">Women's Basketball</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- baba8: NURU vs Olympia defense -->
+          <article class="work__item">
             <div class="work__thumb">
               <img src="baba8.webp" alt="NURU vs Olympia defensive play" loading="lazy" />
               <div class="work__item-overlay">
                 <p class="work__item-title">Lock Down</p>
-                <p class="work__item-meta">Women's Basketball · NURU vs Olympia</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- baba4: AllStar #19 with scoreboard -->
-          <article class="work__item" data-category="basketball">
-            <div class="work__thumb">
-              <img src="baba4.webp" alt="AllStar #19 holding ball with scoreboard" loading="lazy" />
-              <div class="work__item-overlay">
-                <p class="work__item-title">Game Face</p>
-                <p class="work__item-meta">Basketball · AllStar Game</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- baba2: Fan with vuvuzela — atmosphere shot -->
-          <article class="work__item" data-category="atmosphere">
-            <div class="work__thumb">
-              <img src="baba2.webp" alt="Fan blowing a vuvuzela in the crowd" loading="lazy" />
-              <div class="work__item-overlay">
-                <p class="work__item-title">Make Some Noise</p>
-                <p class="work__item-meta">Atmosphere · Courtside</p>
+                <p class="work__item-meta">Women's · NURU vs Olympia</p>
               </div>
             </div>
           </article>
 
         </div>
+        <!-- /women's grid -->
+
       </div>
     </section>
 
     <!-- ========== ABOUT ========== -->
     <section class="about" id="about">
       <div class="container about__inner">
-        <div class="about__image reveal">
-          <!-- baba7: clean portrait-style shot -->
-          <img src="baba7.webp" alt="Machar Kuot — sports photographer" />
+
+        <div class="about__image">
+          <img src="baba1.webp" alt="Machar Kuot — sports photographer" />
         </div>
-        <div class="about__text reveal">
+
+        <div class="about__text">
           <p class="section-label">About</p>
           <h2 class="section-title">Machar Kuot</h2>
           <p class="about__bio">
-            I'm a sports photographer, videographer, and web developer with a passion for 
-            basketball. My lens lives courtside — capturing the split-second decisions, 
+            I'm a sports photographer, videographer, and web developer with a deep passion
+            for basketball. My lens lives courtside — capturing the split-second decisions,
             raw emotion, and relentless energy that make the game unforgettable.
           </p>
           <p class="about__bio">
-            Whether it's a buzzer-beater, a game-changing dunk, or a quiet moment in 
-            the tunnel, I find the story that most people miss. Every frame is intentional. 
+            Whether it's a buzzer-beater, a game-changing dunk, or a quiet moment on the
+            sideline, I find the story that most people miss. Every frame is intentional.
             Every shoot counts.
           </p>
           <a href="#contact" class="btn btn--outline">Work With Me</a>
         </div>
+
       </div>
     </section>
 
     <!-- ========== SERVICES ========== -->
     <section class="services" id="services">
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header">
           <p class="section-label">What I Do</p>
           <h2 class="section-title">Services</h2>
         </div>
         <div class="services__grid">
-          <div class="service-card reveal">
+          <div class="service-card">
             <span class="service-card__number">01</span>
             <h3 class="service-card__title">Sports Photography</h3>
             <p class="service-card__desc">Live game coverage, action shots, and editorial sports photography for teams, athletes, and media outlets.</p>
           </div>
-          <div class="service-card reveal">
+          <div class="service-card">
             <span class="service-card__number">02</span>
             <h3 class="service-card__title">Videography</h3>
             <p class="service-card__desc">Hype reels, highlight packages, documentary-style athlete profiles, and full event video coverage.</p>
           </div>
-          <div class="service-card reveal">
+          <div class="service-card">
             <span class="service-card__number">03</span>
             <h3 class="service-card__title">Web Development</h3>
             <p class="service-card__desc">Custom websites built from scratch — fast, clean, and designed to make your brand stand out online.</p>
@@ -245,12 +249,12 @@
     <!-- ========== CONTACT ========== -->
     <section class="contact" id="contact">
       <div class="container contact__inner">
-        <div class="section-header reveal">
+        <div class="section-header">
           <p class="section-label">Get In Touch</p>
           <h2 class="section-title">Let's Work<br><em>Together</em></h2>
           <p class="contact__sub">Have a project, game, or idea? I'm ready.</p>
         </div>
-        <form class="contact__form reveal" id="contactForm" novalidate>
+        <form class="contact__form" id="contactForm" novalidate>
           <div class="form-group">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="John Doe" required />
